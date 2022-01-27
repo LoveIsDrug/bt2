@@ -1,0 +1,188 @@
+/* Header Styling */
+.header{
+    height: var(--header-height);
+    width: 100%;
+    z-index: 5;
+    inset: 0;
+    align-items: center;
+    background-color: #fff;
+    position: sticky;
+    z-index: 5;
+}
+
+/* header top styling  */
+
+.header .header__LogoFlag{
+    height: var(--LogoFlag-height);
+    clear: right;
+}
+
+.header .header__LogoFlag .header__image img{
+    height: var(--LogoFlag-height);
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.header .header__flag{
+    float: right;
+}
+
+/* header bottom styling  */
+
+.header-bot{
+    background-color: #015fa9;
+}
+
+.header .header__menu{
+    height: calc(var(--header-height) - var(--LogoFlag-height));
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.header .header__menu li{
+    list-style: none;
+    font-size: 1.6em;
+    margin: 0 16px;
+    color: #fff;
+    position: relative;
+    justify-content: center;
+}
+
+.header .header__menu .item::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1.5em;
+    border-left: 2px solid #fff;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header .header__menu .item:last-child::after{
+    border: none;
+}
+
+/* Container  */
+.Container {
+    display: flex;
+    min-height: 100vh;
+    margin-top: 30px;
+    position: relative;
+}
+
+/* sidebar styling  */
+
+.sidebar{
+  padding: 0 1.25rem 1.25rem;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.05);
+  border-radius: .125rem;
+}
+
+/* sidebar login styling */
+
+.sidebar .sidebar__Login{
+    height: 150px;
+    padding: 0 50px;
+    font-size: 1.4em;
+    border: 2px dashed black;
+    margin-bottom: 15px;
+    border-radius: 20px;
+}
+
+.sidebar .sidebar__Login .sidebar__login--input h1{
+    font-size: 1.3em;
+}
+
+.sidebar .sidebar__Login .sidebar__login--input input{
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #7e7e7e;
+}
+
+.sidebar .sidebar__Login .button{
+  width: 100px;
+  height: 30px;
+  background: #015fa9;
+  border: 1px solid #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.sidebar .sidebar__Login .button span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sidebar imgage styling  */
+
+.sidebar__Infor--image{
+    width: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+/* new section styling  */
+
+.heading{
+    font-size: 3.5em;
+    font-weight: 700;
+}
+
+.New__part{
+    margin: 30px 0;
+    position: relative;
+}
+
+.New__part::after{
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1.5em;
+    left: 50%;
+    border-bottom: 2px dashed #000;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.New__part:first-child{
+    margin-top: 10px;
+}
+
+.New__part:last-child::after{
+    border-bottom: none;
+}
+
+.New .New__part h2 {
+    font-size: 2.5em;
+    line-height: 1.8em;
+}
+
+.New .New__part .New__para{
+    font-size: 1.6em;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+
+/* footer styling */
+
+.footer{
+    background: #015fa9;
+}
+
+.footer--content{
+    height: var(--Footer-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer--content span{
+    font-size: 1.6em;
+    font-weight: 500;
+    color: #fff;
+}

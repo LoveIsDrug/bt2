@@ -1,0 +1,19 @@
+/* mobile & tablet */
+@media (max-width: 1023px) {
+    .header{
+        padding: 0;
+    }
+}
+/*tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header{
+        padding: 0;
+    }
+}
+
+/* mobile*/
+@media (max-width: 739px) {
+    .header{
+       padding: 0;
+    }
+}
